@@ -1,4 +1,4 @@
-
+/*code to verify file exist or not and read each word and its possible meanings and print them out.*/
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -35,7 +35,7 @@ public class readFile {
 		String activeline;
 
 		while ((activeline = br.readLine()) != null) {
-			String[] words = activeline.split(" – ");
+			String[] words = activeline.split(" â€“ ");
 			String word = words[0];
 			System.out.println(word);
 			String[] meanings = words[1].split(", ");
